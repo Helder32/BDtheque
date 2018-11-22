@@ -11,6 +11,14 @@
 |
 */
 
+// Route::get('/', function () {
+//     return view('accueil');
+// });
+
+Route::get('/', 'accueilController@home');
+
 Route::get('/', function () {
-    return view('welcome');
+    return view('mesCollections');
 });
+
+
