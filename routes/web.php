@@ -15,10 +15,24 @@
 //     return view('accueil');
 // });
 
-Route::get('/', 'accueilController@home');
+Route::get('/accueil', 'accueilController@home');
 
-Route::get('/', function () {
+Route::get('/mesCollections', function () {
     return view('mesCollections');
 });
 
+Route::get('/gererBD', function () {
+    return view('gererBD');
+});
 
+Route::get('/mesBD', function () {
+    return view('mesBD');
+});
+
+Route::get('/mesAvisEtNotes', function () {
+    return view('mesAvisEtNotes');
+});
+
+Route::get('/mesEnvies', function () {
+    return view('mesEnvies');
+});

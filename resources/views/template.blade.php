@@ -20,27 +20,27 @@
         
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="Http/Controllers/accueilController">Accueil<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="/accueil">Accueil<span class="sr-only">(current)</span></a>
                 </li>
 
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Mes BD<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="/mesBD">Mes BD<span class="sr-only">(current)</span></a>
                 </li>
 
                 <li class="nav-item active">
-                    <a class="nav-link" href="resources/views/mesCollections.blade.php">Mes collections<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="/mesCollections">Mes collections<span class="sr-only">(current)</span></a>
                 </li>
 
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Mes envies<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="/mesEnvies">Mes envies<span class="sr-only">(current)</span></a>
                 </li>
 
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Mes avis/notes<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="/mesAvisEtNotes">Mes avis/notes<span class="sr-only">(current)</span></a>
                 </li>
 
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Gérer mes BD<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="/gererBD">Gérer mes BD<span class="sr-only">(current)</span></a>
                 </li>
 
                 
