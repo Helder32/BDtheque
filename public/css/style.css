@@ -1,0 +1,21 @@
+#titleNavbar {
+    text-align: left;
+    color: aliceblue;
+    margin-right: 5%;
+}
+
+
+.form-group {
+    margin-top: 8%;
+}
+
+#titrePage {
+    color: rgb(85, 121, 13);
+    margin-top: 3%;
+}
+
+#titleAjouterSupprimer {
+    color: blue;
+    text-align: center;
+}
+
