@@ -10,23 +10,34 @@
 
 @section('content')
 
-<form class="col-sm-5" id="ajoutBD">
+<form class="col-sm-6" id="ajoutBD" method="POST" >
 
-    <div class="col-sm-12" id='titleAjouterSupprimer' >
+    @csrf
+
+    <div class="col-sm-10" id='titleAjouterSupprimer' >
         <p>Ajouter une BD</P>
     </div>
 
     <div class="form-row">
         <div class="col">
             <label for="Titre">Titre de la BD</label>
-            <input type="text" class="form-control" id='Titre' placeholder="Titre de la BD">
+            <input type="text" class="form-control" name="titrebd" id='Titre' placeholder="Titre de la BD">
         </div>
+    </div><br/>
 
-        <div class="col">
-            <label for="auteur">Auteur</label>
-            <input type="text" class="form-control" id='auteur' placeholder="Auteur">
+    <div>
+        <div class="form-row">
+            <label for="auteur">Nom de l'auteur</label>
+            <input type="text" class="form-control" name="nomAuteur" id='auteur' placeholder="Nom de l'auteur">
         </div>
-    </div>
+    </div><br/>
+
+    <div>
+        <div class="form-row">
+            <label for="auteur">Prenom de l'auteur</label>
+            <input type="text" class="form-control" name="prenomAuteur" id='auteur' placeholder="Prenom de l'auteur">
+        </div>
+    </div><br/>
 
     <fieldset class="form-group">
 
@@ -81,28 +92,29 @@
     
     <div class="form-group row">
         <div class="col-sm-10">
-            <button type="submit" class="btn btn-primary">Ajouter</button>
+            <button type="submit" class="btn btn-primary" name="ajoutBD" >Ajouter</button>
         </div>
     </div>
 </form>
 
-<form class="col-sm-5" id="supBD">
+
+<form class="col-sm-6" id="supBD">
     <div class="col-sm-12" id='titleAjouterSupprimer' >
         <p>Supprimer une BD</P>
     </div>
 
-    <div class="form-row">
+    <div class="form-group row">
         <div class="col">
             <label for="Titre">Titre de la BD</label>
-            <input type="text" class="form-control" id='Titre' placeholder="Titre de la BD">
-        </div>
-    </div>
-
-    <div class="form-group row">
-        <div class="col-sm-10">
+            <input type="text" class="form-control" id='Titre' placeholder="Titre de la BD à supprimer">
             <button type="submit" class="btn btn-danger">Supprimer</button>
         </div>
     </div>
+
+    <!-- <div class="form-group row">
+        <div class="col-sm-10">
+        </div>
+    </div> -->
 
 </form>
 
